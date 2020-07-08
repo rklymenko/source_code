@@ -47,7 +47,7 @@ class know_your_customer {
             if ( get_option( 'kyc_contact_form' ) !== false ) {
 
                 // The option already exists, so we just update it.
-                update_option( 'kyc_api_key', $_POST['kyc_contact_form'] );
+                update_option( 'kyc_contact_form', $_POST['kyc_contact_form'] );
 
             } else {
                 add_option( 'kyc_contact_form', $_POST['kyc_contact_form'] );

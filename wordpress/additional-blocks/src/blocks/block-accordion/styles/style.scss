@@ -1,0 +1,120 @@
+/**
+ * Accordion styles
+ * Loads on front end and back end
+ */
+
+.ab-block-accordion {
+  &:first-child {
+	border-top: 1px solid #e2e8f0;
+  }
+
+  .ab-accordion-title {
+	font-weight: 500;
+	padding: 1rem 0.5rem;
+	--border-opacity: 1;
+	border-bottom: 1px solid #e2e8f0;
+
+	p {
+	  display: inline;
+	}
+  }
+
+  .ab-accordion-text {
+	padding: 1rem 0.5rem;
+  }
+
+  .editor-rich-text .editor-rich-text__inline-toolbar {
+	display: block;
+	left: 40%;
+  }
+}
+
+/* Font size styles */
+@media only screen and (min-width: 600px) {
+
+  .ab-font-size-14 .ab-accordion-title {
+	font-size: 14px;
+  }
+
+  .ab-font-size-15 .ab-accordion-title {
+	font-size: 15px;
+  }
+
+  .ab-font-size-16 .ab-accordion-title {
+	font-size: 16px;
+  }
+
+  .ab-font-size-17 .ab-accordion-title {
+	font-size: 17px;
+  }
+
+  .ab-font-size-18 .ab-accordion-title {
+	font-size: 18px;
+  }
+
+  .ab-font-size-19 .ab-accordion-title {
+	font-size: 19px;
+  }
+
+  .ab-font-size-20 .ab-accordion-title {
+	font-size: 20px;
+  }
+
+  .ab-font-size-21 .ab-accordion-title {
+	font-size: 21px;
+  }
+
+  .ab-font-size-22 .ab-accordion-title {
+	font-size: 22px;
+  }
+
+  .ab-font-size-23 .ab-accordion-title {
+	font-size: 23px;
+  }
+
+  .ab-font-size-24 .ab-accordion-title {
+	font-size: 24px;
+  }
+}
+
+.w-4 {
+  width: 1rem;
+}
+
+.text-teal-500 {
+  --text-opacity: 1;
+  color: #38b2ac;
+  color: rgba(56, 178, 172, var(--text-opacity));
+}
+
+.h-4 {
+  height: 1rem;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+summary {
+  &:after {
+	content: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" stroke="currentColor" viewbBox="0 0 24 24"><path stroke="rgba(56, 178, 172)" d="M19 9l-7 7-7-7"></path></svg>');
+	padding-bottom: 0.5rem;
+	padding-right: 0.5rem;
+	height: 1rem;
+	width: 1rem;
+  }
+  &:focus {
+	outline: none;
+  }
+}
+
+.items-center {
+  align-items: center;
+}
+
+.flex {
+  display: flex;
+}
